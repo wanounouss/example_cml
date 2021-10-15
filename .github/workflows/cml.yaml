@@ -7,15 +7,9 @@ jobs:
      steps:
         - uses: actions/checkout@v2
         - name: Train model
-experiment
           env:
               REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           run: |
-
-          env:
-              REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          run: |
-master
               pip install -r requirements.txt
               python train.py
 
